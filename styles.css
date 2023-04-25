@@ -1,0 +1,136 @@
+body {
+    margin: 150px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background: #whitesmoke;
+}
+
+.avatar {
+    width: 150px;
+    border: solid 5px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px black;
+    animation: spin 5s;
+}
+
+.card {
+    width: 400px;
+    margin:  0 auto;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    text-shadow: 0px 0px 0px black;
+    background: #264653;
+    /*background-image: url("images/galaxy.gif");
+    background-size: cover;*/
+    color: #2a9d8f;
+    border-bottom: 10px solid #2a9d8f;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px #888;
+
+    animation-name: ;    /*///// animation-name = spin as needed   //////*/
+    animation-duration: 999999ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+    /* transform: rotate(3deg); */
+    /* transform: rotate(0.3rad);/ */
+    /* transform: rotate(3grad); */ 
+    /* transform: rotate(.03turn);  */
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+}
+
+.info, .img {
+    margin: auto 0;
+}
+
+button {
+    background:#2a9d8f;
+    color: #333;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 0 5px;
+
+}
+
+h3, p, h4 {
+    animation: bounce 5s;
+}
+
+h3:hover, p:hover {
+    color: #f4a261;
+    text-shadow: 10px 10px 3px black;
+}
+
+img:hover {
+   color: #f4a261; 
+   box-shadow: 10px 10px 15px black;
+   animation: wiggle 5s;
+}
+
+button:hover {
+    background: #264653;
+    color: #2a9d8f;
+    box-shadow: 5px 5px 20px black;;
+}
+
+@keyframes wiggle {
+    0% {transform: translate(1px, 1px) rotate(0deg)}
+    25% {transform: translate(2px, -2px) rotate(1deg)}
+    50% {transform: translate(-2px, 3px) rotate(-5deg)}
+    60% {transform: translate(-4px, 2px) rotate(0deg)}
+    70% {transform: translate(4px, 2px) rotate(-5deg)}
+    80% {transform: translate(-2px, -2px) rotate(5deg)}
+    90% {transform: translate(2px, 3px) rotate(0deg)}
+    100% {transform: translate(2px, -3px) rotate(-5deg)}
+}
+
+
+
+@keyframes bounce {
+        0%   { transform: scale(1,1) translateY(0); }
+        10%  { transform: scale(1.1,.9) translateY(0); }
+        30%  { transform: scale(.9,1.1)   translateY(-55px);}
+        50%  { transform: scale(1.05,.95) translateY(0); }
+        58%  { transform: scale(1,1) translateY(-7px); }
+        65%  { transform: scale(1,1) translateY(0);}
+        100% { transform: scale(1,1) translateY(0);}
+    }
+
+@-webkit-keyframes bounce {
+       0%   { transform: scale(1,1) translateY(0); }
+        10%  { transform: scale(1.1,.9) translateY(0); }
+        30%  { transform: scale(.9,1.1)   translateY(-55px);}
+        50%  { transform: scale(1.05,.95) translateY(0); }
+        58%  { transform: scale(1,1) translateY(-7px);}
+        65%  { transform: scale(1,1) translateY(0);}
+        100% { transform: scale(1,1) translateY(0);} 
+}
+
+
+/*
+Stretch goals:
+Find other ways you can personalize 
+the design of your business card, e.g.:
+- change the border(s)
+- add border radius
+- shuffle the layout
+- shadows        🤯
+- hover effects  🤯🤯
+- animations     🤯🤯🤯
+*/
+
+/*
+Final challenge:
+Download the code to your local computer and place it
+in a folder called "business-card"
+*/
